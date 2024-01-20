@@ -14,7 +14,6 @@ namespace iAttendTFL_MobileApp.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
@@ -22,6 +21,7 @@ namespace iAttendTFL_MobileApp.Droid
 
             //Xamarin.Essentials.Platform.Init(Application);
             ZXing.Net.Mobile.Forms.Android.Platform.Init();
+            
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
@@ -32,7 +32,5 @@ namespace iAttendTFL_MobileApp.Droid
             global::ZXing.Net.Mobile.Android.PermissionsHandler.OnRequestPermissionsResult(requestCode, permissions, grantResults);
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-
-        
     }
 }

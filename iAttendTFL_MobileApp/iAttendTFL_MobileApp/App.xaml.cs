@@ -19,7 +19,7 @@ namespace iAttendTFL_MobileApp
         public App()
         {
             InitializeComponent();
-                        
+
             MainPage = new MainPage();
         }
 

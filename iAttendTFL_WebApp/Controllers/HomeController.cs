@@ -83,7 +83,6 @@ namespace iAttendTFL_WebApp.Controllers
             {
                 return RedirectToAction("DoesNotHavePermission", new { requiresMod = false });
             }
-
             return View();
         }
 
