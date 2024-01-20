@@ -2,8 +2,8 @@
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using iAttendTFL_MobileApp.Services;
-using iAttendTFL_MobileApp.Views;
+//using iAttendTFL_MobileApp.Services;
+//using iAttendTFL_MobileApp.Views;
 
 namespace iAttendTFL_MobileApp
 {
@@ -20,10 +20,6 @@ namespace iAttendTFL_MobileApp
         {
             InitializeComponent();
 
-            if (UseMockDataStore)
-                DependencyService.Register<MockDataStore>();
-            else
-                DependencyService.Register<AzureDataStore>();
             MainPage = new MainPage();
         }
 

@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Manage Accounts";
+}
+
+<h1 class="hor-center-text">Manage Accounts</h1>
+<table>
+    <tr>
+        <th style="width: 1%;">Edit</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Account Type</th>
+        <th>Education Track</th>
+        <th>Expected Graduation</th>
+    </tr>
+    <tr>
+        <td><input type="button" class="select-user-button" onclick="location.href='@Url.Action("EditAnAccount", "Home")'" value="Select"></td>
+        <td>John Doe</td>
+        <td>johndoe@email.com</td>
+        <td>Student</td>
+        <td>Music Major</td>
+        <td>May 2020</td>
+    </tr>
+    <tr>
+        <td><input type="button" class="select-user-button" value="Select"></td>
+        <td>Jane Doe</td>
+        <td>janedoe@email.com</td>
+        <td>Moderator</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="select-user-button" value="Select"></td>
+        <td>Sally Student</td>
+        <td>salstu@awebsite.com</td>
+        <td>Student</td>
+        <td>Music Minor</td>
+        <td>December 2022</td>
+    </tr>
+</table>
